@@ -34,6 +34,11 @@ steps:
     majorVersion: '1'
     minorVersion: '0'
     patchVersion: '0'
+
+- task: NuGetToolInstaller@1
+  displayName: 'Use NuGet 4.8.1'
+  inputs:
+    versionSpec: 4.8.1
  
 - task: NuGetCommand@2
   displayName: 'Publish NuGet package'
